@@ -26,22 +26,25 @@
 
     .image {
       display: block;
-      width: 100%;
-      height: 100%;
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
       }
 
       @media (min-width: 768px) {
-        width: 220px;
-        height: 300px;
+        width: 220px !important;
+        height: 300px !important;
 
         img {
-          width: 220px;
-          height: 300px;
-          object-fit: contain;
+          width: 220px !important;
+          height: 300px !important;
+          object-fit: contain !important;
         }
       }
     }
@@ -131,8 +134,9 @@
         background-color: lightgrey;
 
         img {
-          width: 100%;
-          height: 100%;
+          position: relative !important;
+          width: 50px !important;
+          height: 50px !important;
           object-fit: cover;
         }
       }

@@ -1,6 +1,7 @@
-import Rating from "./Rating";
-import showStyle from "../styles/ShowInfo.module.scss";
-import Link from "next/link";
+import Rating from "./Rating"
+import showStyle from "../styles/ShowInfo.module.scss"
+import Link from "next/link"
+import Image from 'next/image'
 
 export const ShowInfo = ({ show }) => {
   const showSummary = (summary) => {
@@ -12,7 +13,7 @@ export const ShowInfo = ({ show }) => {
       <div className={showStyle.banner}>
         <div className={showStyle.area}>
           <div className={showStyle.image}>
-            {show.image ? <img src={show.image.original} /> : ""}
+            {show.image ? <Image src={show.image.original} alt={show.name}/> : ""}
           </div>
           <div className={showStyle.info}>
             <Rating rating={show.rating.average} />
@@ -59,7 +60,7 @@ export const ShowInfo = ({ show }) => {
                   <li key={artist.id}>
                     <span className={showStyle.potrait}>
                       {artist.person.image ? (
-                        <img src={artist.person.image.medium} />
+                        <Image src={artist.person.image.medium} alt={artist.person.name} />
                       ) : (
                         ""
                       )}

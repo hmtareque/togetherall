@@ -13,7 +13,7 @@ export default function ScheduleStyle({ shows }) {
       <div className={scheduleStyle.content}>
         <div className="row">
           {shows.map((show) => {
-            return <ShowListItem show={show.show} />;
+            return <ShowListItem key={show.id} show={show.show} />;
           })}
         </div>
       </div>
