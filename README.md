@@ -5,6 +5,7 @@ This is a TV Show Website build with [React.js](https://reactjs.org/) and [Next.
 Please, run the following command to build and run the server:
 
 ```bash
+npm install 
 npm run build
 npm run start
 ```
