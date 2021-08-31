@@ -1,0 +1,26 @@
+.showItem {
+    margin: 0;
+    padding: 16px;
+
+    .showImage {
+        width: 100%;
+        transition: 0.33s ease-in-out all;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+            }
+
+
+
+   
+
+    .showName {
+        font-size: 0.9rem;
+        margin-top: 4px;
+    }
+
+
+
+}

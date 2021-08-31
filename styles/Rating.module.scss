@@ -1,0 +1,43 @@
+.ratingContainer {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0; 
+    text-align: left;
+    font-family: 'Open Sans', sans-serif; 
+    width: 96px;
+}
+
+ .ratings {
+    unicode-bidi: bidi-override;
+    color: #b7b7b7;
+    font-size: 16px;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0 1px 0 #a2a2a2;
+    letter-spacing: 4px;
+  } 
+  .ratings::before { 
+    content: '★★★★★';
+    opacity: .3;
+  }
+  
+  .ratings::after {
+    color: gold;
+    content: '★★★★★';
+    text-shadow: 0 1px 0 #ab5414;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top:0;
+   // width: attr(rating);
+    overflow: hidden;
+    width: var(--rating, 0);
+
+  }
+  
