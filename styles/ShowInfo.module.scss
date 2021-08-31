@@ -3,23 +3,46 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 280px;
+  min-height: 280px;
+
+  position: relative;
+  display: block;
+  @media (min-width: 768px) {
+    height: 280px;
+  }
 
   .area {
     max-width: 1140px;
-    height: 300px;
+    min-height: 300px;
     margin: 0 auto;
     padding: 32px 16px;
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      height: 300px;
+    }
 
     .image {
       display: block;
-      width: 220px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
       img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (min-width: 768px) {
         width: 220px;
         height: 300px;
-        object-fit: contain;
+
+        img {
+          width: 220px;
+          height: 300px;
+          object-fit: contain;
+        }
       }
     }
 
@@ -51,8 +74,7 @@
 
 .content {
   max-width: 1140px;
-  min-height: calc(100vh - #{350px});
-  // background-color: rgb(194, 233, 162);
+  min-height: calc(100vh - #{344px});
   margin: 0 auto;
   padding: 24px;
   padding-top: 72px;
@@ -122,6 +144,17 @@
         display: inline-block;
         color: darkgray;
       }
+    }
+  }
+
+  .tvShowList {
+    display: block;
+    margin: 0;
+    padding: 16px 0;
+    color: gray;
+
+    &:hover {
+      color: black;
     }
   }
 }
