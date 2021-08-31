@@ -2,7 +2,7 @@ This is a TV Show Website build with [React.js](https://reactjs.org/) and [Next.
 
 ## Getting Started
 
-First, run the development server:
+Please, run the following command to build and run the server:
 
 ```bash
 npm run build
