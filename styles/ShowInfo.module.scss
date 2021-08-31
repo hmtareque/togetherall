@@ -91,16 +91,18 @@
     margin-right: 32px;
 
     li {
+      display: flex;
       border-bottom: 2px solid lightgrey;
       padding: 16px 0;
 
       .infoTitle {
         display: inline-block;
-        width: 200px;
+        width: 30%;
         font-weight: bold;
       }
 
       .infoValue {
+        width: 70%;
         display: inline-block;
         color: darkgray;
       }
@@ -137,10 +139,11 @@
 
       .person {
         display: inline-block;
-        width: 200px;
+        width: 40%;
       }
 
       .character {
+        width: 40%;
         display: inline-block;
         color: darkgray;
       }
