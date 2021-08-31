@@ -1,0 +1,127 @@
+.banner {
+  background-color: lightgrey;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 280px;
+
+  .area {
+    max-width: 1140px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: flex;
+
+    .image {
+      display: block;
+      width: 220px;
+      height: 300px;
+      img {
+        width: 220px;
+        height: 300px;
+        object-fit: contain;
+      }
+    }
+
+    .info {
+      display: block;
+      position: relative;
+      margin-left: 16px;
+      margin-top: 16px;
+      max-width: 800px;
+
+      .title {
+        font-size: 1.6rem;
+        text-shadow: 0px 2px 3px gray;
+        margin-top: 8px;
+      }
+
+      .summary {
+        margin: 0;
+        padding: 8px 0;
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  max-width: 1140px;
+  min-height: calc(100vh - #{350px});
+  // background-color: rgb(194, 233, 162);
+  margin: 0 auto;
+  padding: 24px;
+  padding-top: 72px;
+
+  .sectionTitle {
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  .infoList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 32px;
+
+    li {
+      border-bottom: 2px solid lightgrey;
+      padding: 16px 0;
+
+      .infoTitle {
+        display: inline-block;
+        width: 200px;
+        font-weight: bold;
+      }
+
+      .infoValue {
+        display: inline-block;
+        color: darkgray;
+      }
+    }
+  }
+
+  .castList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 32px;
+
+    li {
+      border-bottom: 2px solid lightgrey;
+      padding: 8px 0;
+      line-height: 50px;
+      display: flex;
+
+      .potrait {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 25px;
+        margin-right: 8px;
+        background-color: lightgrey;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .person {
+        display: inline-block;
+        width: 200px;
+      }
+
+      .character {
+        display: inline-block;
+        color: darkgray;
+      }
+    }
+  }
+}

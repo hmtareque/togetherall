@@ -12,10 +12,9 @@ export default function ScheduleStyle({ shows }) {
       </div>
       <div className={scheduleStyle.content}>
         <div className="row">
-        {shows.map((show) => {
-        return (
-          <ShowListItem show={show.show} />
-        )})}
+          {shows.map((show) => {
+            return <ShowListItem show={show.show} />;
+          })}
         </div>
       </div>
     </>
@@ -32,9 +31,7 @@ export const getStaticProps = async () => {
     };
   }
 
-  console.log(shows);
-
   return {
-    props: { shows }, 
+    props: { shows },
   };
 };
